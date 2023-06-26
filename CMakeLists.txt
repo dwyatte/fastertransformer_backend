@@ -104,8 +104,8 @@ FetchContent_Declare(
 )
 FetchContent_Declare(
   repo-ft
-  GIT_REPOSITORY https://github.com/dskhudia/FasterTransformer.git
-  GIT_TAG 7a71b1888f81bb6f5d9ffffb6b1af493927e041a
+  GIT_REPOSITORY https://github.com/dwyatte/FasterTransformer.git
+  GIT_TAG 7909779d357ec0443cd46717fbd374700faf4d36
   GIT_SHALLOW ON
 )
 FetchContent_MakeAvailable(repo-common repo-core repo-backend repo-ft)
