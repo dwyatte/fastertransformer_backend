@@ -102,19 +102,12 @@ FetchContent_Declare(
   GIT_TAG ${TRITON_BACKEND_REPO_TAG}
   GIT_SHALLOW ON
 )
-if (EXISTS ${FT_DIR})
-  FetchContent_Declare(
-    repo-ft
-    SOURCE_DIR ${FT_DIR}
-  )
-else()
-  FetchContent_Declare(
-    repo-ft
-    GIT_REPOSITORY https://github.com/NVIDIA/FasterTransformer.git 
-    GIT_TAG main
-    GIT_SHALLOW ON
-  )
-endif()
+FetchContent_Declare(
+  repo-ft
+  GIT_REPOSITORY https://github.com/dskhudia/FasterTransformer.git
+  GIT_TAG 7a71b1888f81bb6f5d9ffffb6b1af493927e041a
+  GIT_SHALLOW ON
+)
 FetchContent_MakeAvailable(repo-common repo-core repo-backend repo-ft)
 
 #
